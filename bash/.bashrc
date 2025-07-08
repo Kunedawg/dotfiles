@@ -122,8 +122,8 @@ alias files='xdg-open .'
 # kmk: Cursor alias
 alias cursor='~/apps/Cursor-1.1.7-x86_64.AppImage --no-sandbox'
 
-# kmk: starting zsh shell (ghetto way for now until i can make zsh default)
-eval "$(zoxide init --cmd cd bash)"
-
 # kmk: Initialize Starship
 eval "$(starship init bash)"
+
+# kmk: starting zsh shell (ghetto way for now until i can make zsh default)
+eval "$(zoxide init --cmd cd bash)"
