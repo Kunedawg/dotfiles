@@ -109,12 +109,14 @@ source $ZSH/oh-my-zsh.sh
 # Load Starship prompt
 # eval "$(starship init zsh)"
 
+# kmk: aliases
+[[ -f ~/.zsh_aliases ]] && source ~/.zsh_aliases
 
-# Initialize zoxide (rebinds cd!)
+# kmk: Initialize zoxide (rebinds cd!)
 eval "$(zoxide init --cmd cd zsh)"
 
-# Initialize fzf key-bindings (if you used the git install)
+# kmk:Initialize fzf key-bindings (if you used the git install)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Initialize Starship
+# kmk: Initialize Starship
 eval "$(starship init zsh)"
