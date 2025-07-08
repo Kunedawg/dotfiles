@@ -168,14 +168,13 @@
   "explorer.confirmDragAndDrop": false,
   "C_Cpp.intelliSenseEngine": "disabled",
   "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",
-  "terminal.integrated.profiles.linux": {
-    "zsh": {
-      "path": "/usr/bin/zsh",
-      "args": []
-    }
-  },
-  "terminal.integrated.defaultProfile.linux": "zsh",
-  // "terminal.integrated.defaultProfile.linux": "bash",
+  // "terminal.integrated.profiles.linux": {
+  //   "zsh": {
+  //     "path": "/usr/bin/zsh",
+  //     "args": []
+  //   }
+  // },
+  "terminal.integrated.defaultProfile.linux": "bash",
   "remote.SSH.enableRemoteCommand": true,
   "remote.SSH.useLocalServer": true,
   "cSpell.allowCompoundWords": true,
