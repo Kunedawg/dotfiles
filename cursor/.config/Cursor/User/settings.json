@@ -1,0 +1,210 @@
+{
+    "workbench.colorTheme": "Default Dark Modern",
+    "markdownlint.config": {
+        "MD024": false
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "editor.formatOnSave": false,
+    "cSpell.userWords": [
+        "absl",
+        "Acontis",
+        "actigel",
+        "appname",
+        "autonumber",
+        "Beckhoff",
+        "bootable",
+        "cachix",
+        "Calib",
+        "Capn",
+        "cmdline",
+        "cppzmq",
+        "ctest",
+        "endforeach",
+        "ethernets",
+        "figsize",
+        "Filt",
+        "fontsize",
+        "fontweight",
+        "gcode",
+        "googletest",
+        "GRPCPP",
+        "gtest",
+        "HDRS",
+        "iconbuild",
+        "Leica",
+        "libsodium",
+        "libstd",
+        "Lieca",
+        "Loger",
+        "LREAL",
+        "Makefiles",
+        "markersize",
+        "matplotlib",
+        "minivulcan",
+        "mpsc",
+        "Netplan",
+        "Netplans",
+        "nixos",
+        "nixpkgs",
+        "nlohmann",
+        "numpy",
+        "opcua",
+        "Palfinger",
+        "Paltronic",
+        "patchelf",
+        "pipefail",
+        "piptools",
+        "pkgs",
+        "plicon",
+        "protoc",
+        "REFEED",
+        "rpath",
+        "rtec",
+        "scipy",
+        "setpoint",
+        "Simulink",
+        "sockraw",
+        "SRCS",
+        "tailnet",
+        "Tailscale",
+        "tkinter",
+        "Unhold",
+        "uwebsockets",
+        "venv",
+        "Wsign",
+        "xaxis",
+        "xlabel",
+        "xlim",
+        "ylabel",
+        "ylim",
+        "zorder"
+    ],
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.rulers": [
+            88
+        ],
+        "rewrap.autoWrap.enabled": true,
+        "rewrap.wrappingColumn": 72,
+        "editor.formatOnType": true
+    },
+    "flake8.args": [
+        "--max-line-length=88",
+        "--extend-ignore=E203"
+    ],
+    "black-formatter.args": [
+        "--preview",
+        "--enable-unstable-feature",
+        "string_processing"
+    ],
+    "remote.SSH.remotePlatform": {
+        "phx": "linux",
+        "mini-vulcan": "linux",
+        "phx-rtec-fat": "linux"
+    },
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "explorer.confirmDelete": false,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "[xml]": {
+        "editor.defaultFormatter": "DotJoshJohnson.xml"
+    },
+    "lldb-dap.executable-path": "/usr/lib/llvm-18/bin/lldb-dap",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "python.terminal.activateEnvironment": false,
+    "terminal.integrated.cwd": "${workspaceFolder}",
+    "makefile.configureOnOpen": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "g",
+                "D"
+            ],
+            "commands": [
+                "editor.action.goToDeclaration"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "d"
+            ],
+            "commands": [
+                "editor.action.revealDefinition"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "i"
+            ],
+            "commands": [
+                "editor.action.goToImplementation"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "r"
+            ],
+            "commands": [
+                "editor.action.referenceSearch.trigger"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "y"
+            ],
+            "commands": [
+                "editor.action.goToTypeDefinition"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "editor.action.showHover"
+            ]
+        }
+    ],
+    "window.restoreWindows": "none",
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 120 }",
+    "C_Cpp.codeAnalysis.clangTidy.enabled": false,
+    "editor.minimap.enabled": false,
+    "cmake.showConfigureWithDebuggerNotification": false,
+    "cmake.useCMakePresets": "auto",
+    "editor.inlayHints.enabled": "off",
+    "editor.glyphMargin": true,
+    "explorer.confirmDragAndDrop": false,
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "remote.SSH.enableRemoteCommand": true,
+    "remote.SSH.useLocalServer": true,
+    "cSpell.allowCompoundWords": true,
+    "terminal.integrated.commandsToSkipShell": [
+        "matlab.interrupt"
+    ],
+    "diffEditor.ignoreTrimWhitespace": true,
+    "github.copilot.nextEditSuggestions.enabled": true
+}
