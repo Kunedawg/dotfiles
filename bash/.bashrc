@@ -123,4 +123,4 @@ alias files='xdg-open .'
 alias cursor='~/apps/Cursor-1.1.7-x86_64.AppImage --no-sandbox'
 
 # kmk: starting zsh shell (ghetto way for now until i can make zsh default)
-zsh
+eval "$(zoxide init --cmd cd bash)"
