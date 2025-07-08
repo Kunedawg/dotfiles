@@ -178,9 +178,7 @@
   "remote.SSH.enableRemoteCommand": true,
   "remote.SSH.useLocalServer": true,
   "cSpell.allowCompoundWords": true,
-  "terminal.integrated.commandsToSkipShell": [
-    "matlab.interrupt"
-  ],
+  "terminal.integrated.commandsToSkipShell": ["matlab.interrupt"],
   "diffEditor.ignoreTrimWhitespace": true,
   "github.copilot.nextEditSuggestions.enabled": true
 }
