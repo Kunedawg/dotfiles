@@ -2,6 +2,24 @@
 
 Here’s a step-by-step guide to get a modern Zsh setup with Oh My Zsh, WezTerm, zoxide, fzf and Starship on Ubuntu. You can copy-and-paste each block into your terminal.
 
+- [Setup](#setup)
+  - [Stow deploy](#stow-deploy)
+    - [Stow on 7-8-2025](#stow-on-7-8-2025)
+  - [Note for Cursor / Vscode](#note-for-cursor--vscode)
+  - [Note for git](#note-for-git)
+  - [Ubuntu](#ubuntu)
+    - [Install Zsh (if you don’t already have it)](#install-zsh-if-you-dont-already-have-it)
+    - [Install Oh My Zsh](#install-oh-my-zsh)
+    - [Install fzf (fuzzy finder)](#install-fzf-fuzzy-finder)
+    - [Install zoxide (“smarter” `cd`)](#install-zoxide-smarter-cd)
+    - [Install Starship prompt](#install-starship-prompt)
+      - [Install nerd font](#install-nerd-font)
+    - [Install WezTerm](#install-wezterm)
+      - [Launch WezTerm](#launch-wezterm)
+  - [Further setup for Ubuntu in the future](#further-setup-for-ubuntu-in-the-future)
+    - [Make Zsh your default shell](#make-zsh-your-default-shell)
+    - [Test it](#test-it)
+
 ## Stow deploy
 
 Each folder represents layout relative to the home directory. `zsh/.zshrc` gets mapped to `~/.zshrc`.
@@ -57,7 +75,7 @@ sudo apt update
 sudo apt install -y zsh
 ```
 
-## 3. Install Oh My Zsh
+### Install Oh My Zsh
 
 - <https://github.com/ohmyzsh/ohmyzsh>
 
@@ -69,7 +87,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 > [!NOTE]
 > Setting up this for the first time,
 
-## Install fzf (fuzzy finder)
+### Install fzf (fuzzy finder)
 
 - <https://github.com/junegunn/fzf>
 
@@ -86,9 +104,10 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install   # answer y to all prompts
 ```
 
-## Install zoxide (“smarter” `cd`)
+### Install zoxide (“smarter” `cd`)
 
 - <https://github.com/ajeetdsouza/zoxide>
+- <https://www.youtube.com/watch?v=aghxkpyRVDY&ab_channel=DreamsofAutonomy>
 
 The easiest way is via the install script:
 
@@ -104,9 +123,7 @@ add this to `.zshrc`
 eval "$(zoxide init zsh)"
 ```
 
----
-
-## Install Starship prompt
+### Install Starship prompt
 
 ```bash
 curl -sS https://starship.rs/install.sh | sh
@@ -118,11 +135,34 @@ add this to `.zshrc`
 eval "$(starship init zsh)"
 ```
 
-### Install nerd font
+#### Install nerd font
 
 Go here: <https://www.nerdfonts.com/> and install a nerd font. I picked "Hack Nerd Font". Just download and then open files and hit install on the native window that pops up. Takes a little bit of time to install. You can do them all at once.
 
----
+### Install WezTerm
+
+> [!WARNING]
+> Wezterm did not seem to work when I installed on Ubuntu, no idea why.
+
+WezTerm provides an APT repo you can add:
+
+```bash
+curl -fsSL https://apt.fury.io/wez/gpg.key | sudo gpg --yes --dearmor -o /usr/share/keyrings/wezterm-fury.gpg
+echo 'deb [signed-by=/usr/share/keyrings/wezterm-fury.gpg] https://apt.fury.io/wez/ * *' | sudo tee /etc/apt/sources.list.d/wezterm.list
+sudo chmod 644 /usr/share/keyrings/wezterm-fury.gpg
+sudo apt update
+sudo apt install wezterm
+```
+
+#### Launch WezTerm
+
+Just run:
+
+```bash
+wezterm
+```
+
+By default it’ll start a Zsh login shell. You can tweak its GUI settings at `~/.config/wezterm/wezterm.lua`—see the [WezTerm docs](https://wezfurlong.org/wezterm/config/files.html) for details.
 
 ## Further setup for Ubuntu in the future
 
@@ -134,7 +174,7 @@ Go here: <https://www.nerdfonts.com/> and install a nerd font. I picked "Hack Ne
 
 ### Make Zsh your default shell
 
-> ![WARNING]
+> [!WARNING]
 > This set was done and then reversed
 
 ```bash
@@ -146,37 +186,7 @@ chsh -s "$(which zsh)"
 
 Log out and back in (or restart your terminal) to start using Zsh by default. (i did a restart)
 
-## 7. Install WezTerm
-
-WezTerm provides an APT repo you can add:
-
-```bash
-sudo apt install -y curl gnupg apt-transport-https ca-certificates lsb-release
-curl -s https://wezfurlong.org/apt/debian/keys.asc \
-  | sudo apt-key add -
-echo "deb https://wezfurlong.org/apt/ubuntu $(lsb_release -cs) main" \
-  | sudo tee /etc/apt/sources.list.d/wezterm.list
-sudo apt update
-sudo apt install -y wezterm
-```
-
-Alternatively, you can grab the latest `.deb` from GitHub releases and `sudo dpkg -i ~/Downloads/wezterm_*.deb`.
-
----
-
-## 9. Launch WezTerm
-
-Just run:
-
-```bash
-wezterm
-```
-
-By default it’ll start a Zsh login shell. You can tweak its GUI settings at `~/.config/wezterm/wezterm.lua`—see the [WezTerm docs](https://wezfurlong.org/wezterm/config/files.html) for details.
-
----
-
-## 10. Test it!
+### Test it
 
 1. Open a new WezTerm window.
 2. Type `z` and hit Tab—fzf should fuzzy-find your recent dirs.

@@ -110,8 +110,8 @@ source $ZSH/oh-my-zsh.sh
 # eval "$(starship init zsh)"
 
 
-# Initialize zoxide
-eval "$(zoxide init zsh)"
+# Initialize zoxide (rebinds cd!)
+eval "$(zoxide init --cmd cd zsh)"
 
 # Initialize fzf key-bindings (if you used the git install)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
