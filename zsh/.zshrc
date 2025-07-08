@@ -5,13 +5,13 @@ export PATH="/usr/local/bin:$PATH"
 # Tell starship to hook into zsh
 eval "$(starship init zsh)"
 
-# Example sensible options
-setopt AUTO_CD      # just `foo` to cd into ./foo
-setopt NO_BACKUP    # don’t create `foo~` files
+# sensible options
+setopt AUTO_CD # just `foo` to cd into ./foo
 autoload -Uz compinit && compinit
 
-# host-specific tweaks
-if [[ "$(uname)" == "Darwin" ]]; then
-  source ~/.mac-zsh   # you can create ~/.mac-zsh in backup-mac if you want
+# host-specific tweaks (only if you’ve created ~/.mac-zsh)
+if [[ "$(uname)" == "Darwin" && -f ~/.mac-zsh ]]; then
+  source ~/.mac-zsh
 fi
+
 # -----------------------------
