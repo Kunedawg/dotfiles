@@ -1,0 +1,13 @@
+# -------- starship.toml --------
+add_newline = false
+[directory]
+truncation_length = 3
+[git_branch]
+symbol = "🌿 "
+# …any other modules you like…
+# You can even do OS-specific configs:
+[hostname]
+format = """($hostname)"""
+hostname = "my-mac"
+# ------------------------------
+
