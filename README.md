@@ -1,7 +1,5 @@
 # Windows Ubuntu WSL Setup
 
-Here’s a step-by-step guide to get a modern Zsh setup with Oh My Zsh, WezTerm, zoxide, fzf and Starship on Ubuntu. You can copy-and-paste each block into your terminal.
-
 - [Windows Ubuntu WSL Setup](#windows-ubuntu-wsl-setup)
   - [Stow deploy](#stow-deploy)
   - [Note for Cursor / Vscode](#note-for-cursor--vscode)
@@ -9,6 +7,7 @@ Here’s a step-by-step guide to get a modern Zsh setup with Oh My Zsh, WezTerm,
   - [Ubuntu](#ubuntu)
     - [Install fzf (fuzzy finder)](#install-fzf-fuzzy-finder)
     - [Install zoxide (“smarter” `cd`)](#install-zoxide-smarter-cd)
+    - [Install nix](#install-nix)
     - [Install Starship prompt](#install-starship-prompt)
       - [Install nerd font](#install-nerd-font)
 
@@ -84,6 +83,14 @@ add this to `.zshrc`
 
 ```bash
 eval "$(zoxide init zsh)"
+```
+
+### Install nix
+
+```sh
+sh <(curl -L https://nixos.org/nix/install) --daemon
+printf '\nexperimental-features = nix-command flakes\n' | sudo tee -a /etc/nix/nix.conf
+sudo systemctl restart nix-daemon
 ```
 
 ### Install Starship prompt
