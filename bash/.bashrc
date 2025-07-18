@@ -116,12 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# kmk: shortcut for opening current directory in files
-alias files='xdg-open .'
-
-# kmk: Cursor alias
-alias cursor='~/apps/Cursor-1.1.7-x86_64.AppImage --no-sandbox'
-
 # kmk: Initialize Starship
 eval "$(starship init bash)"
 
