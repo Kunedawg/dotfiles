@@ -1,0 +1,92 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.printWidth": 120,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.rulers": [88],
+    "rewrap.autoWrap.enabled": true,
+    "rewrap.wrappingColumn": 72,
+    "editor.formatOnType": true
+  },
+  "cSpell.userWords": [
+    "autopep",
+    "Coalescer",
+    "cooldown",
+    "datetime",
+    "devcontainer",
+    "dotenv",
+    "esbenp",
+    "figsize",
+    "gcloud",
+    "gloud",
+    "Insertable",
+    "iterrows",
+    "jsons",
+    "kevbot",
+    "Kuney",
+    "kysely",
+    "levelname",
+    "logix",
+    "networkx",
+    "NOFILL",
+    "openpyxl",
+    "Permissives",
+    "Pipenv",
+    "pylint",
+    "rslogix",
+    "setpoint",
+    "setpoints",
+    "setuptools",
+    "sheetnames",
+    "Updateable",
+    "xdot",
+    "xlutils",
+    "xlwt",
+    "yapf"
+  ],
+  "editor.minimap.enabled": false,
+  "cSpell.ignoreWords": ["Ffprobe"],
+  "explorer.confirmDragAndDrop": false,
+  "redhat.telemetry.enabled": true,
+  "editor.renderWhitespace": "all",
+  "black-formatter.args": ["--preview", "--enable-unstable-feature", "string_processing"],
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-containers"
+  },
+  "flake8.args": ["--max-line-length=88", "--extend-ignore=E203"],
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "github-actions.workflows.pinned.workflows": [],
+  "gitlens.rebaseEditor.ordering": "asc",
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "docker.extension.enableComposeLanguageServer": false,
+  "workbench.colorTheme": "Default Dark Modern",
+  "explorer.confirmDelete": false,
+  "terminal.integrated.shellIntegration.enabled": false,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.automationProfile.osx": {
+    "path": "/bin/zsh"
+  },
+  "editor.lineNumbers": "relative"
+}
