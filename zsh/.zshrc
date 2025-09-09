@@ -5,7 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Ensure pip doesn't install globally
+# Ensure pip doesn't install globally (kevin kuney I think)
 export PIP_REQUIRE_VIRTUALENV=true
 
 # If you come from bash you might have to change your $PATH.
@@ -129,4 +129,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # kevin kuney
+export VIRTUAL_ENV_DISABLE_PROMPT=1
 eval "$(starship init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
