@@ -168,6 +168,7 @@
   "explorer.confirmDragAndDrop": false,
   "C_Cpp.intelliSenseEngine": "disabled",
   "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",
+  "cmake.configureSettings": {},
   // "terminal.integrated.profiles.linux": {
   //   "zsh": {
   //     "path": "/usr/bin/zsh",
@@ -180,5 +181,6 @@
   "cSpell.allowCompoundWords": true,
   "terminal.integrated.commandsToSkipShell": ["matlab.interrupt"],
   "diffEditor.ignoreTrimWhitespace": true,
-  "github.copilot.nextEditSuggestions.enabled": true
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "editor.lineNumbers": "relative"
 }

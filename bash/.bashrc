@@ -120,10 +120,24 @@ fi
 alias files='xdg-open .'
 
 # kmk: Cursor alias
-alias cursor='~/apps/Cursor-1.1.7-x86_64.AppImage --no-sandbox'
+# alias cursor='~/apps/Cursor-1.1.7-x86_64.AppImage --no-sandbox'
+
+# kmk: clipboard
+alias cb='xclip -selection clipboard'
 
 # kmk: Initialize Starship
 eval "$(starship init bash)"
 
 # kmk: starting zsh shell (ghetto way for now until i can make zsh default)
 eval "$(zoxide init --cmd cd bash)"
+
+# Phoenix env
+# export PHX_PALFINGER_ID=FINE_POS_TEST_STAND
+# export PHX_ENABLE_MGM=FALSE
+# export PHX_ENABLE_FP=TRUE
+# export PHX_ENABLE_APS=FALSE
+# export PHX_ENABLE_MGM_BASE_IMU=FALSE
+# export PHX_ENABLE_MGM_SAFETY_BOX=FALSE
+# export PHX_ENABLE_EXTRUDER=FALSE
+# export PHX_ENABLE_CYCLE_TIME_EXCEEDED_WARNINGS=FALSE
+
