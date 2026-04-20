@@ -1,6 +1,6 @@
 {
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -14,7 +14,7 @@
     "editor.rulers": [88],
     "rewrap.autoWrap.enabled": true,
     "rewrap.wrappingColumn": 72,
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
   },
   "cSpell.userWords": [
     "autopep",
@@ -31,6 +31,8 @@
     "iterrows",
     "jsons",
     "kevbot",
+    "Keybind",
+    "Keybinds",
     "Kuney",
     "kysely",
     "levelname",
@@ -50,7 +52,7 @@
     "xdot",
     "xlutils",
     "xlwt",
-    "yapf"
+    "yapf",
   ],
   "editor.minimap.enabled": false,
   "cSpell.ignoreWords": ["Ffprobe"],
@@ -59,36 +61,36 @@
   "editor.renderWhitespace": "all",
   "black-formatter.args": ["--preview", "--enable-unstable-feature", "string_processing"],
   "[ignore]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+    "editor.defaultFormatter": "foxundermoon.shell-format",
   },
   "[shellscript]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+    "editor.defaultFormatter": "foxundermoon.shell-format",
   },
   "[dockerfile]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker",
   },
   "flake8.args": ["--max-line-length=88", "--extend-ignore=E203"],
   "[dotenv]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+    "editor.defaultFormatter": "foxundermoon.shell-format",
   },
   "[toml]": {
-    "editor.defaultFormatter": "tamasfe.even-better-toml"
+    "editor.defaultFormatter": "tamasfe.even-better-toml",
   },
   "diffEditor.hideUnchangedRegions.enabled": true,
   "github-actions.workflows.pinned.workflows": [],
   "gitlens.rebaseEditor.ordering": "asc",
   "[c]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
+    "editor.defaultFormatter": "ms-vscode.cpptools",
   },
   "docker.extension.enableComposeLanguageServer": false,
   // "terminal.external.osxExec": "/usr/local/bin/wezterm",
   // "terminal.integrated.commandsToSkipShell": ["matlab.interrupt"]
-  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.colorTheme": "Dark Modern",
   "explorer.confirmDelete": false,
   "terminal.integrated.shellIntegration.enabled": false,
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.automationProfile.osx": {
-    "path": "/bin/zsh"
+    "path": "/bin/zsh",
   },
   "editor.lineNumbers": "relative",
   "git.confirmSync": false,
@@ -99,38 +101,38 @@
     "editor.quickSuggestions": {
       "other": true,
       "comments": false,
-      "strings": true
+      "strings": true,
     },
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "markdown-preview-enhanced.previewTheme": "github-dark.css",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["g", "D"],
-      "commands": ["editor.action.goToDeclaration"]
+      "commands": ["editor.action.goToDeclaration"],
     },
     {
       "before": ["g", "d"],
-      "commands": ["editor.action.revealDefinition"]
+      "commands": ["editor.action.revealDefinition"],
     },
     {
       "before": ["g", "i"],
-      "commands": ["editor.action.goToImplementation"]
+      "commands": ["editor.action.goToImplementation"],
     },
     {
       "before": ["g", "r"],
-      "commands": ["editor.action.referenceSearch.trigger"]
+      "commands": ["editor.action.referenceSearch.trigger"],
     },
     {
       "before": ["g", "y"],
-      "commands": ["editor.action.goToTypeDefinition"]
+      "commands": ["editor.action.goToTypeDefinition"],
     },
     {
       "before": ["K"],
-      "commands": ["editor.action.showHover"]
-    }
-  ]
+      "commands": ["editor.action.showHover"],
+    },
+  ],
 }

@@ -1,6 +1,7 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
+# NOTE(kkuney): commented out 4/20/2026, moving away p10k and just using starship
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -12,7 +13,8 @@ export PIP_REQUIRE_VIRTUALENV=true
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+# NOTE(kkuney): commented out 4/20/2026, moving away from oh-my-zsh. May return if I really want a specific plugin
+# export ZSH="$HOME/.oh-my-zsh"
 
 # Python script path
 export PATH=$PATH:/Users/kevinkuney/Library/Python/3.9/bin
@@ -90,7 +92,7 @@ source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
