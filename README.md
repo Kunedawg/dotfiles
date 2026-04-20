@@ -10,8 +10,17 @@ brew install --cask ghostty
 
 ### tmux
 
-- [Tmux has forever changed the way I write code. - YouTube](https://www.youtube.com/watch?v=DzNmUNvnB04)
-- [GitHub - tmux-plugins/tpm: Tmux Plugin Manager · GitHub](https://github.com/tmux-plugins/tpm)
+- Youtube Videos
+  - [Tmux has forever changed the way I write code. - YouTube](https://www.youtube.com/watch?v=DzNmUNvnB04)
+  - [How to Customize Tmux (20XX Edition) \| Zero Plugins - YouTube](https://www.youtube.com/watch?v=XivdyrFCV4M)
+- Plugin manager
+  - [GitHub - tmux-plugins/tpm: Tmux Plugin Manager · GitHub](https://github.com/tmux-plugins/tpm)
+- Plugins
+  - sens
+- example tmux.conf
+  - [tmux-btw/tmux.conf at master · tonybanters/tmux-btw · GitHub](https://github.com/tonybanters/tmux-btw/blob/master/tmux.conf)
+  - [tmux/tmux.conf at main · dreamsofcode-io/tmux · GitHub](https://github.com/dreamsofcode-io/tmux/blob/main/tmux.conf)
+  - [dotfiles/tmux/tmux.conf at master · omerxx/dotfiles · GitHub](https://github.com/omerxx/dotfiles/blob/master/tmux/tmux.conf)
 
 #### commands
 
