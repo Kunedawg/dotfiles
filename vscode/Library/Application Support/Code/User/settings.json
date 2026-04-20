@@ -5,9 +5,8 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.printWidth": 120,
-  "javascript.updateImportsOnFileMove.enabled": "always",
+  "js/ts.updateImportsOnFileMove.enabled": "always",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "typescript.updateImportsOnFileMove.enabled": "always",
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true,
@@ -67,7 +66,7 @@
     "editor.defaultFormatter": "foxundermoon.shell-format",
   },
   "[dockerfile]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "flake8.args": ["--max-line-length=88", "--extend-ignore=E203"],
   "[dotenv]": {
