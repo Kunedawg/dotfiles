@@ -81,6 +81,56 @@
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
   "docker.extension.enableComposeLanguageServer": false,
-  "terminal.external.osxExec": "/usr/local/bin/wezterm",
-  "terminal.integrated.commandsToSkipShell": ["matlab.interrupt"]
+  // "terminal.external.osxExec": "/usr/local/bin/wezterm",
+  // "terminal.integrated.commandsToSkipShell": ["matlab.interrupt"]
+  "workbench.colorTheme": "Default Dark Modern",
+  "explorer.confirmDelete": false,
+  "terminal.integrated.shellIntegration.enabled": false,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.automationProfile.osx": {
+    "path": "/bin/zsh"
+  },
+  "editor.lineNumbers": "relative",
+  "git.confirmSync": false,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["g", "D"],
+      "commands": ["editor.action.goToDeclaration"]
+    },
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+    },
+    {
+      "before": ["g", "y"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showHover"]
+    }
+  ]
 }
