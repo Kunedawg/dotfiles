@@ -1,6 +1,46 @@
 # Setup
 
-## Install
+## Tools
+
+```txt
+eza
+fd
+fzf
+git
+ghostty
+lazygit
+pipx
+starship
+stow
+tmux
+tree (replaced by eza)
+uv
+yazi
+zoxide
+```
+
+deprecated/no longer needed
+
+```txt
+cursor
+wezterm
+```
+
+### Mac
+
+```bash
+brew install stow fzf zoxide starship tmux
+```
+
+## Deploy dotfiles with stow
+
+```bash
+cd ~
+cd dotfiles
+stow ghostty starship tmux vscode zsh -t ~
+```
+
+## Tools
 
 ### ghostty
 
@@ -56,26 +96,3 @@ tmux source ~/.tmux.config
 ```txt
 <prefix>-c
 ```
-
-### Mac
-
-```bash
-brew install zsh stow starship tmux
-```
-
-#### Todos
-
-- [ ] iterm2 setup
-- [ ] vscode
-
-## Deploy Config
-
-```bash
-cd ~
-cd dotfiles
-stow starship tmux vscode zsh -t ~
-```
-
-## Deprecated
-
-- wezterm

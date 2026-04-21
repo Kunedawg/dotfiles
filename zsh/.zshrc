@@ -2,9 +2,9 @@
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 # NOTE(kkuney): commented out 4/20/2026, moving away p10k and just using starship
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# fi
 
 # Ensure pip doesn't install globally (kevin kuney I think)
 export PIP_REQUIRE_VIRTUALENV=true
@@ -90,7 +90,7 @@ source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+# plugins=(git)
 
 # source $ZSH/oh-my-zsh.sh
 
@@ -129,6 +129,24 @@ export PATH="$PATH:/Users/kevinkuney/.local/bin"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# kkuney 2026-04-20
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
+# keep default ls behavior 
+# alias ls='eza --group-directories-first --icons=auto'
+
+alias ll='eza -lh --group-directories-first --git --icons=auto'
+alias la='eza -lah --group-directories-first --git --icons=auto'
+alias lt='eza --tree --level=2 --group-directories-first --icons=auto'
+alias tree='eza --tree --git-ignore'
 
 # kevin kuney
 export VIRTUAL_ENV_DISABLE_PROMPT=1
