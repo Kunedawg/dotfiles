@@ -10,6 +10,7 @@ git
 ghostty
 lazygit
 pipx
+ripgrep
 starship
 stow
 tmux
