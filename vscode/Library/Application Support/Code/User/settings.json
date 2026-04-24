@@ -134,4 +134,10 @@
       "commands": ["editor.action.showHover"],
     },
   ],
+  "yaml.schemas": {
+    "file:///Users/kevinkuney/.vscode/extensions/continue.continue-1.2.22-darwin-arm64/config-yaml-schema.json": [
+      ".continue/**/*.yaml",
+    ],
+  },
+  "diffEditor.ignoreTrimWhitespace": true,
 }

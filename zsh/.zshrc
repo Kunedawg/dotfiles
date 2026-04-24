@@ -148,6 +148,14 @@ alias la='eza -lah --group-directories-first --git --icons=auto'
 alias lt='eza --tree --level=2 --group-directories-first --icons=auto'
 alias tree='eza --tree --git-ignore'
 
+# kkuney 2026-04-22
+fcd() {
+  local dir
+  dir=$(fd --type d --hidden --exclude .git . "${1:-.}" \
+    | fzf --preview 'eza --tree --level=2 --color=always {} | head -50') \
+    && cd "$dir"
+}
+
 # kevin kuney
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 eval "$(starship init zsh)"
