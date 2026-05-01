@@ -133,6 +133,14 @@
       "before": ["K"],
       "commands": ["editor.action.showHover"],
     },
+    {
+      "before": ["z", "j"],
+      "commands": ["editor.gotoNextFold"],
+    },
+    {
+      "before": ["z", "k"],
+      "commands": ["editor.gotoPreviousFold"],
+    },
   ],
   "yaml.schemas": {
     "file:///Users/kevinkuney/.vscode/extensions/continue.continue-1.2.22-darwin-arm64/config-yaml-schema.json": [
